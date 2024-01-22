@@ -1,0 +1,143 @@
+.cardWrapper {
+  padding: 0 6px;
+  width: 100%;
+  max-width: 400px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+}
+.items-1 {
+  width: 100%;
+}
+.items-2 {
+  width: calc(50%);
+}
+
+.items-3 {
+  width: calc(100% / 3);
+}
+
+.items-4 {
+  width: calc(100% / 4);
+}
+
+.items-5 {
+  width: calc(100% / 5);
+}
+
+.items-6 {
+  width: calc(100% / 6);
+}
+
+.titleContainer {
+  background: #5753f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 15px;
+}
+.title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.cardInner {
+  margin-top: 12px;
+  background: #e3e3fc;
+  padding: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  height: calc(100% - 92px);
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+.list {
+  display: flex;
+
+  gap: 10px;
+}
+.listId {
+  border: 1px solid #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  border-radius: 50%;
+  min-width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconContainer {
+  border: 1px solid #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  border-radius: 50%;
+  min-width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info {
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 1px;
+}
+
+.dashedBorder {
+  border: 4px dashed #5753f4;
+}
+
+.subTitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+  font-weight: 600;
+  max-width: 150px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 200px;
+}
+.img {
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+  margin-top: auto;
+}
+/* @media only screen and (max-width: 1847px) {
+  .card {
+    min-width: 320px;
+  }
+}
+@media only screen and (max-width: 1099px) {
+  .card {
+    min-width: 350px;
+  }
+}
+@media only screen and (max-width: 795px) {
+  .card {
+    min-width: 400px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .card {
+    min-width: 100%;
+  }
+} */
