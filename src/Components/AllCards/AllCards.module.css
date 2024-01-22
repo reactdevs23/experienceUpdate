@@ -42,6 +42,34 @@
   width: 100%;
   margin: 0 auto;
 }
+/* .items-1 {
+  grid-template-columns: 1fr;
+  max-width: 400px;
+}
+.items-2 {
+  grid-template-columns: 2fr;
+  max-width: calc(400px * 2);
+}
+
+.items-3 {
+  grid-template-columns: 3fr;
+  max-width: calc(400px * 3);
+}
+
+.items-4 {
+  grid-template-columns: 4fr;
+  max-width: calc(400px * 4);
+}
+
+.items-5 {
+  grid-template-columns: 5fr;
+  max-width: calc(400px * 5);
+}
+
+.items-6 {
+  grid-template-columns: 6fr;
+  max-width: calc(400px * 6);
+} */
 
 /* @media only screen and (max-width: 1280px) {
   .allCards {

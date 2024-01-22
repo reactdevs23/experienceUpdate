@@ -16,7 +16,7 @@ const SingleCard = ({
   useEffect(() => {
     calculateHeight("#titleContainer", setTitleContainerHeight);
     calculateHeight("#listContainer", setListContainerHeight);
-  }, []);
+  }, [titleContainerHeight, listContainerHeight]);
   return (
     <div
       className={`${styles.cardWrapper} ${styles[`items-${numberOfItems}`]}  ${
@@ -27,7 +27,11 @@ const SingleCard = ({
         <div
           className={styles.titleContainer}
           id="titleContainer"
-          style={{ background: color, height: titleContainerHeight }}
+          style={{
+            background: color,
+            minHeight: titleContainerHeight,
+            maxHeight: titleContainerHeight,
+          }}
         >
           <h3 className={styles.title}>{title}</h3>
         </div>

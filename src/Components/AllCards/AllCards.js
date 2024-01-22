@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
@@ -6,9 +6,9 @@ import { msgBox } from "../../images";
 import styles from "./AllCards.module.css";
 import SingleCard from "../SingleCard/SingleCard";
 const AllCards = () => {
-  const data = [
+  const [data, setData] = useState([
     {
-      title: "Explore Checking interest rates",
+      title: "Explore Checking interest rates Checking interest rates",
       list: [
         {
           id: "",
@@ -137,7 +137,8 @@ const AllCards = () => {
       imgLink: msgBox,
       color: "#00003f",
     },
-  ];
+  ]);
+
   return (
     <section className={styles.mainWrapper}>
       <div className={[styles.wrapper, "container"].join(" ")}>
