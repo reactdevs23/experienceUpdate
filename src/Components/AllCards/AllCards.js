@@ -8,7 +8,7 @@ import SingleCard from "../SingleCard/SingleCard";
 const AllCards = () => {
   const data = [
     {
-      title: "Explore",
+      title: "Explore Checking interest rates",
       list: [
         {
           id: "",

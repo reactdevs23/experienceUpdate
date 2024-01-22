@@ -12,8 +12,10 @@ const SingleCard = ({
   numberOfItems,
 }) => {
   const [titleContainerHeight, setTitleContainerHeight] = useState("auto");
+  const [listContainerHeight, setListContainerHeight] = useState("auto");
   useEffect(() => {
     calculateHeight("#titleContainer", setTitleContainerHeight);
+    calculateHeight("#listContainer", setListContainerHeight);
   }, []);
   return (
     <div
@@ -30,7 +32,11 @@ const SingleCard = ({
           <h3 className={styles.title}>{title}</h3>
         </div>
         <div className={styles.cardInner}>
-          <div className={styles.listContainer}>
+          <div
+            className={styles.listContainer}
+            id="listContainer"
+            style={{ height: listContainerHeight }}
+          >
             {list.map((el, i) => (
               <div className={styles.list} key={i}>
                 {el.id && <p className={styles.id}> {el.id}</p>}
