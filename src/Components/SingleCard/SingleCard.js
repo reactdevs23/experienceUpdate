@@ -29,7 +29,7 @@ const SingleCard = ({
           id="titleContainer"
           style={{
             background: color,
-            hieght: titleContainerHeight,
+            height: titleContainerHeight,
           }}
         >
           <h3 className={styles.title}>{title}</h3>
